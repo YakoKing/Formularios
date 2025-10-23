@@ -173,3 +173,31 @@ public class Formulario extends javax.swing.JFrame {
     private javax.swing.JPasswordField txtContraseña;
     // End of variables declaration//GEN-END:variables
 }
+
+//Metodos Que pueden preguntar
+
+/*Reto 1 --> Modifica el evento "acceder" para evitar que aparezca el diálogo si el texto 
+esta vacío.  
+Método privado ComprobarTexto():  
+ Argumentos : Jtextfield 
+ Devuelve: Booleano */
+
+/*private boolean ComprobarTexto(javax.swing.text.JTextComponent campo) {
+    return !campo.getText().trim().isEmpty();
+}*/
+
+//y la llmada seria en el boton acceder 
+/*if (!ComprobarTexto(txtContraseña)) {
+        JOptionPane.showMessageDialog(
+            this,
+            "El campo de contraseña no puede estar vacío.",
+            "Error de validación",
+            JOptionPane.WARNING_MESSAGE
+        );
+        return; // Sale del método sin abrir el diálogo
+    } Mas las demas validaciones*/
+
+/*Reto 2 --> Modifica el código para conseguir que la ventana se posiciones justo al lado 
+de la principal. Si la ventana principal se desplaza, por el monitor, al hacer click en 
+"Acceder" debe aparecer siempre pegado al lado. 
+*/
